@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Content Moderator",
+    "version": "1.0",
+    "description": "Looks at all of the images on your active tab and blurs anything pornographic",
+    "permissions": [
+      "activeTab",
+      "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+  }
